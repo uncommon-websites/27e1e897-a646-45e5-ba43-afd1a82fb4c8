@@ -12,15 +12,19 @@
 	const values = [
 		{
 			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
+			description: "Pushing the boundaries of computer vision AI to solve the security industry's biggest challenges with breakthrough technology."
 		},
 		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
+			title: "Precision",
+			description: "Delivering 95% false alarm reduction through meticulous AI training and rigorous enterprise-grade quality standards."
 		},
 		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
+			title: "Trust",
+			description: "Building secure, privacy-compliant solutions that Fortune 500 security directors rely on to protect what matters most."
+		},
+		{
+			title: "Excellence",
+			description: "From Y Combinator recognition to Forbes Cloud 100, we earn industry leadership through relentless pursuit of perfection."
 		}
 	];
 </script>
@@ -41,61 +45,24 @@
 />
 
 <!-- Our Culture Section -->
-<Culture {values} generating />
-
-<!-- StakeholderGrid Section -->
-<StakeholderGrid
-	generating
-	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
-	stakeholders={[
-		{
-			name: "Alex Morgan",
-			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		},
-		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image: "https://www.unc.mn/image-placeholder.svg"
-		}
-	]}
-/>
+<Culture {values} />
 
 <StakeholderGrid
-	generating
 	stakeholderType="investor"
 	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
+	subtitle="Recognized by leading accelerators and industry experts"
 	stakeholders={[
 		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
-		},
-		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
-		},
-		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
+			name: "Y Combinator",
+			image: "https://logo.clearbit.com/ycombinator.com"
 		}
 	]}
 />
 
 <!-- CTA Section -->
 <CallToAction
-	generating
-	title="Ready to collaborate?"
-	subtitle="Let's create something amazing"
-	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
+	title="Ready to eliminate false alarms?"
+	subtitle="See Ambient.ai in action"
+	description="Join security directors at Adobe, TikTok, Cisco, and Gap who've reduced false alarms by 95% and accelerated investigations by 20x. Schedule a live threat detection demonstration at your facility."
+	imageSrc="/generated/image-a-professional-security-director-in-busi.webp"
 />
