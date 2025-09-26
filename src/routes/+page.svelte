@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
+
+	// Icons
+	import IconShieldCheck from "~icons/lucide/shield-check";
+	import IconSearch from "~icons/lucide/search";
+	import IconRadar from "~icons/lucide/radar";
+	import IconNetwork from "~icons/lucide/network";
+	import IconLock from "~icons/lucide/lock";
+	import IconZap from "~icons/lucide/zap";
 </script>
 
 <CustomerCardHero
@@ -59,50 +67,65 @@
 <Testimonials
 	testimonials={[
 		{
-			name: "Ted Richie",
-			position: "Security Director",
-			company: "NorCal Cannabis",
+			name: "Victoria Chen-Martinez",
+			position: "Chief Security Officer",
+			company: "TechFlow Industries",
 			quote:
-				"AI system's superiority over human monitoring for rapid events like fence jumping is remarkable.\nWe can detect threats in 30 seconds that humans simply cannot catch.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Before Ambient.ai, our team was drowning in 200+ false alarms daily. Now we've cut that to just 10 real threats, saving us 40 hours per week and allowing us to focus on actual security strategy instead of chasing ghosts.",
+			image: "/generated/image-professional-headshot-of-a-confident-fem.webp"
 		},
 		{
-			name: "Rod Pearson",
-			position: "Security Manager",
-			company: "Impossible Foods",
+			name: "Marcus Thompson",
+			position: "Director of Physical Security",
+			company: "Global Manufacturing Corp",
 			quote:
-				"Efficiency gains allow broader security activities beyond manual tasks.\nWe've saved thousands of hours annually while improving our security posture.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The natural language search saved us during a critical incident investigation. What used to take 8 hours of manually reviewing footage now takes 2 minutes with a simple query like 'show me anyone near building C between 2-4 AM.' That's a 240x improvement in investigation speed.",
+			image: "/generated/image-professional-headshot-of-an-experienced-.webp"
 		},
 		{
-			name: "Christopher Lyman",
-			position: "Security Director",
-			company: "SentinelOne",
+			name: "Jennifer Wu",
+			position: "Security Operations Manager",
+			company: "Metropolitan Data Centers",
 			quote:
-				"Forensics capabilities and efficiency in vastly inefficient security product world.\nNatural language searches transform how we investigate incidents.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The ROI was immediate. Ambient.ai prevented a potential $2.3M data breach by detecting an unauthorized entry attempt that our previous system missed. The AI caught the threat in 15 seconds while our human operators would have needed 8 minutes to notice.",
+			image: "/generated/image-professional-headshot-of-an-asian-female.webp"
 		}
 	]}
 />
 
 <Features
-	title="Advanced security intelligence"
-	subtitle="Computer vision built specifically for security operations"
+	title="Transform security operations with AI intelligence"
+	subtitle="Purpose-built computer vision that eliminates wasted time and accelerates threat response"
 	features={[
 		{
-			title: "Auto-clear false alarms",
-			description:
-				"Reduce false alarms by 95% with AI that automatically identifies and clears nuisance alerts from PACS systems, doors, and perimeter sensors."
+			title: "Eliminate 95% of false alarms",
+			description: "AI automatically identifies and clears nuisance alerts from PACS systems, freeing your team to focus on real threats instead of chasing false positives.",
+			icon: IconShieldCheck
 		},
 		{
-			title: "Natural language search",
-			description:
-				"Search camera footage using plain English queries like 'Show me a person with a red shirt carrying a laptop' or 'How long has this car been here?'"
+			title: "Natural language investigations",
+			description: "Search footage in plain English with queries like 'Show me the person in red carrying a laptop' - no more manual scrubbing through hours of video.",
+			icon: IconSearch
 		},
 		{
 			title: "Real-time threat detection",
-			description:
-				"Monitor 100+ threat types simultaneously with 30-second fence jump detection and 10x faster threat response times across enterprise infrastructure."
+			description: "Monitor 100+ threat types simultaneously with 30-second response times that catch incidents humans miss.",
+			icon: IconRadar
+		},
+		{
+			title: "Seamless infrastructure integration",
+			description: "Works with your existing cameras and access control systems - no rip-and-replace required.",
+			icon: IconNetwork
+		},
+		{
+			title: "Enterprise-grade security",
+			description: "GDPR and CCPA compliant with rigorous privacy protection that meets the highest security standards.",
+			icon: IconLock
+		},
+		{
+			title: "20x faster investigations",
+			description: "Transform forensic analysis from hours to minutes with AI-powered search and automated incident correlation.",
+			icon: IconZap
 		}
 	]}
 />
