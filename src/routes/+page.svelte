@@ -6,74 +6,105 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	centered={true}
+	title="Transform physical security with AI intelligence"
+	subtitle="Reduce false alarms by 95% and accelerate investigations 20x with computer vision that automatically clears nuisance alerts."
+	customers={[
+		{
+			name: "Michael Chen",
+			position: "Director of Security",
+			imageSrc: "/generated/image-centered-portrait-of-a-professional-male.webp"
+		},
+		{
+			name: "Sarah Rodriguez",
+			position: "Security Manager",
+			imageSrc: "/generated/image-centered-portrait-of-a-professional-fema.webp"
+		},
+		{
+			name: "James Thompson",
+			position: "Enterprise Security Executive",
+			imageSrc: "/generated/image-centered-portrait-of-a-confident-male-en.webp"
+		},
+		{
+			name: "Lisa Park",
+			position: "Corporate Security Director",
+			imageSrc: "/generated/image-centered-portrait-of-a-professional-fema.webp"
+		},
+		{
+			name: "Robert Williams",
+			position: "Security Operations Manager",
+			imageSrc: "/generated/image-centered-portrait-of-a-senior-male-secur.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/adobe.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/cisco.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/servicenow.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/gap.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Intelligent security operations"
+	text="Our computer vision AI transforms physical security by automatically detecting threats, clearing false alarms, and enabling natural language investigations across enterprise infrastructure."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Ted Richie",
+			position: "Security Director",
+			company: "NorCal Cannabis",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
+				"AI system's superiority over human monitoring for rapid events like fence jumping is remarkable.\nWe can detect threats in 30 seconds that humans simply cannot catch.",
 			image: "https://www.unc.mn/image-placeholder.svg"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Rod Pearson",
+			position: "Security Manager",
+			company: "Impossible Foods",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
+				"Efficiency gains allow broader security activities beyond manual tasks.\nWe've saved thousands of hours annually while improving our security posture.",
 			image: "https://www.unc.mn/image-placeholder.svg"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Christopher Lyman",
+			position: "Security Director",
+			company: "SentinelOne",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
+				"Forensics capabilities and efficiency in vastly inefficient security product world.\nNatural language searches transform how we investigate incidents.",
 			image: "https://www.unc.mn/image-placeholder.svg"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Advanced security intelligence"
+	subtitle="Computer vision built specifically for security operations"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Auto-clear false alarms",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Reduce false alarms by 95% with AI that automatically identifies and clears nuisance alerts from PACS systems, doors, and perimeter sensors."
 		},
 		{
-			title: "Data Analysis",
+			title: "Natural language search",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Search camera footage using plain English queries like 'Show me a person with a red shirt carrying a laptop' or 'How long has this car been here?'"
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Real-time threat detection",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Monitor 100+ threat types simultaneously with 30-second fence jump detection and 10x faster threat response times across enterprise infrastructure."
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction />
